@@ -1,16 +1,16 @@
 //external libraries, no additional libs beyond those allowed
-document.write('<script type="text/javascript" src="../../lib/three.js-r109/build/three.js"></script>');
-document.write('<script type="text/javascript" src="../../lib/three.js-r109/examples/js/controls/OrbitControls.js"></script>');
-document.write('<script type="text/javascript" src="../../lib/dat.gui-0.7.6/build/dat.gui.js"></script>');
-document.write('<script type="text/javascript" src="../../lib/ThreeCSG-1/three-csg.js"></script>');
-document.write('<script type="text/javascript" src="../../lib/three.js-r109/examples/js/libs/inflate.min.js"></script>');
-document.write('<script type="text/javascript" src="../../lib/three.js-r109/examples/js/loaders/FBXLoader_r90.js"></script>');
-document.write('<script type="text/javascript" src="../../lib/cannon.js-0.6.2/build/cannon.js"></script>');
-document.write('<script type="text/javascript" src="../../lib/cannon.js-0.6.2/tools/threejs/CannonDebugRenderer.js"></script>');
-document.write('<script type="text/javascript" src="../../lib/three.js-r109/examples/js/libs/stats.min.js"></script>');
+document.write('<script type="text/javascript" src="../lib/three.js-r109/build/three.js"></script>');
+document.write('<script type="text/javascript" src="../lib/three.js-r109/examples/js/controls/OrbitControls.js"></script>');
+document.write('<script type="text/javascript" src="../lib/dat.gui-0.7.6/build/dat.gui.js"></script>');
+document.write('<script type="text/javascript" src="../lib/ThreeCSG-1/three-csg.js"></script>');
+document.write('<script type="text/javascript" src="../lib/three.js-r109/examples/js/libs/inflate.min.js"></script>');
+document.write('<script type="text/javascript" src="../lib/three.js-r109/examples/js/loaders/FBXLoader.js"></script>');
+document.write('<script type="text/javascript" src="../lib/cannon.js-0.6.2/build/cannon.js"></script>');
+document.write('<script type="text/javascript" src="../lib/cannon.js-0.6.2/tools/threejs/CannonDebugRenderer.js"></script>');
+document.write('<script type="text/javascript" src="../lib/three.js-r109/examples/js/libs/stats.min.js"></script>');
 
 //own internal classes/mods
-document.write('<script type="text/javascript" src="src/objects/Placeholders.js"></script>');
+//document.write('<script type="text/javascript" src="src/objects/Placeholders.js"></script>');
 //document.write('<script type="text/javascript" src="src/objects/Floor.js"></script>');
 document.write('<script type="text/javascript" src="src/objects/Islands.js"></script>');
 document.write('<script type="text/javascript" src="src/objects/StorefromPrimitives.js"></script>');

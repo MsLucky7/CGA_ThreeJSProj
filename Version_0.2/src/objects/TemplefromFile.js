@@ -7,7 +7,7 @@ TempleFromFile = function () {
     fbxloader.load("src/models/TempleCleaner02.fbx", function (model) {
 
         temple.add(model);
-        temple.scale.set(0.1,0.1,0.1);
+        temple.scale.set(0.5,0.5,0.5);
 
         model.traverse(function (child) {
             if (child.isMesh) {
