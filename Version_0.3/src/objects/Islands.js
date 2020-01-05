@@ -5,7 +5,7 @@ class Islands extends THREE.Mesh {
 
         var cubeGeometry = new THREE.BoxGeometry(width, height, depth);
         var cubeMaterial = new THREE.MeshPhongMaterial({
-            color: 0x3f3f3f
+            color: 0x383838
         });
         var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
         cube.position.set(posX, posY, posZ);

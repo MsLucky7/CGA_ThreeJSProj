@@ -10,14 +10,15 @@ EngineFromFile = function (rot, sizeX, sizeY, sizeZ) {
         engine.scale.set(sizeX,sizeY,sizeZ);
         engine.rotation.set(0, rot*Math.PI / 180, 0);
 
-        var engineMaterial = new THREE.MeshPhongMaterial({color: 0x0c0c0c, specular: 0xd8d8d8, shininess: 80});
-        engine.material = engineMaterial;
+        var engineMaterial = new THREE.MeshPhongMaterial({color: 0x252525, specular: 0xd8d8d8, shininess: 80});
+        
 
         model.traverse(function (child) {
             if (child.isMesh) {
                 console.log(child.name);
                 child.castShadow = true;
                 child.receiveShadow = true;
+                child.material = engineMaterial;
             }
         })
     });

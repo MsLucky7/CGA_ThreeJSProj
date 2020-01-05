@@ -10,10 +10,10 @@ House01FromFile = function () {
         house01.add(model);
         house01.scale.set(0.3,0.3,0.3);
 
-        var houseMaterial = new THREE.MeshPhongMaterial({});
+        
         var houseTexture = new THREE.TextureLoader().load("src/images/House01Diffuse.png");
-        houseMaterial.map = houseTexture;
-        house01.material = houseMaterial;
+        var houseMaterial = new THREE.MeshPhongMaterial({map: houseTexture});
+        //house01.material = houseMaterial;
 
 
         model.traverse(function (child) {
@@ -21,6 +21,7 @@ House01FromFile = function () {
                 console.log(child.name);
                 child.castShadow = true;
                 child.receiveShadow = true;
+                child.material = houseMaterial;
             }
         })
     });
