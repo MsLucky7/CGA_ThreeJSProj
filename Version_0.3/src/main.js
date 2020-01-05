@@ -12,6 +12,7 @@ document.write('<script type="text/javascript" src="../lib/three.js-r109/example
 //own internal classes/mods
 //document.write('<script type="text/javascript" src="src/objects/Placeholders.js"></script>');
 //document.write('<script type="text/javascript" src="src/objects/Floor.js"></script>');
+document.write('<script type="text/javascript" src="src/objects/HoverCarfromPrimitives.js"></script>');
 document.write('<script type="text/javascript" src="src/objects/Islands.js"></script>');
 document.write('<script type="text/javascript" src="src/objects/StorefromPrimitives.js"></script>');
 document.write('<script type="text/javascript" src="src/objects/TemplefromFile.js"></script>');
@@ -40,6 +41,10 @@ function main() {
     physicsVisualDebugger = new THREE.CannonDebugRenderer(scene, physics.getWorld());
 
     soundscape = new Soundscape();
+
+
+    var hoverCar = new HoverCar(200, 300, 50, 0, 0, 0, 2, 2, 2);
+    scene.add(hoverCar);
 
     //Islands Placement
     var islandMain = new Islands(180, 20, 300, -130, 30, 0, true, true);
@@ -83,9 +88,9 @@ function main() {
     islandMainEngine.position.set(-250, 30, -30);
     scene.add(islandMainEngine);
 
-    /*var islandMainEngine = new EngineFromFile(180, 0.32, 0.2, 0.18);
-    islandMainEngine.position.set(-250, 30, -30);
-    scene.add(islandMainEngine);*/
+    var islandSecondEngine = new EngineFromFile(180, 0.32, 0.2, 0.18);
+    islandSecondEngine.position.set(-250, 30, -30);
+    scene.add(islandSecondEngine);
 
     var house01 = new House01FromFile();
     house01.position.set(46,35,220);

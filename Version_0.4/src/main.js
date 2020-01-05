@@ -4,7 +4,7 @@ document.write('<script type="text/javascript" src="../../lib/three.js-r109/exam
 document.write('<script type="text/javascript" src="../../lib/dat.gui-0.7.6/build/dat.gui.js"></script>');
 document.write('<script type="text/javascript" src="../../lib/ThreeCSG-1/three-csg.js"></script>');
 document.write('<script type="text/javascript" src="../../lib/three.js-r109/examples/js/libs/inflate.min.js"></script>');
-document.write('<script type="text/javascript" src="../../lib/three.js-r109/examples/js/loaders/FBXLoader_r90.js"></script>');
+document.write('<script type="text/javascript" src="../../lib/three.js-r109/examples/js/loaders/FBXLoader.js"></script>');
 document.write('<script type="text/javascript" src="../../lib/cannon.js-0.6.2/build/cannon.js"></script>');
 document.write('<script type="text/javascript" src="../../lib/cannon.js-0.6.2/tools/threejs/CannonDebugRenderer.js"></script>');
 document.write('<script type="text/javascript" src="../../lib/three.js-r109/examples/js/libs/stats.min.js"></script>');
