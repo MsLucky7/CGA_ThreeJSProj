@@ -10,7 +10,7 @@ class Physics {
 
         this.testMaterial = new CANNON.Material();
         this.testMaterial.friction = 0.5;
-        this.testMaterial.restitution = 0.5;
+        this.testMaterial.restitution = 0.8;
     }
 
     addPair(visualObject, body) {
