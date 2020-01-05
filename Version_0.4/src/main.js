@@ -16,6 +16,8 @@ document.write('<script type="text/javascript" src="src/objects/TemplefromFile.j
 document.write('<script type="text/javascript" src="src/objects/House01fromFile.js"></script>');
 document.write('<script type="text/javascript" src="src/objects/Houses02fromFile.js"></script>');
 document.write('<script type="text/javascript" src="src/objects/CherryTreefromFile.js"></script>');
+document.write('<script type="text/javascript" src="src/objects/Trashcan1fromFile.js"></script>');
+document.write('<script type="text/javascript" src="src/objects/Trashcan2fromFile.js"></script>');
 document.write('<script type="text/javascript" src="src/objects/Lights.js"></script>');
 document.write('<script type="text/javascript" src="src/animation/Animation.js"></script>');
 document.write('<script type="text/javascript" src="src/animation/Tween.js"></script>');
@@ -119,6 +121,16 @@ function main() {
     tree5.position.set(-150,230,910);
     tree5.rotation.y = 90*DEG_TO_RAD;
     scene.add(tree5);
+
+    var trashcan1 = new Trashcan1fromFile();
+    trashcan1.position.set(200,70,80);
+    physics.addCylinder(trashcan1, 2, 10, 10, 25, 8, 0, 0, 0, 90*DEG_TO_RAD);
+    scene.add(trashcan1);
+
+    var trashcan2 = new Trashcan2fromFile();
+    trashcan2.position.set(230,70,75);
+    physics.addCylinder(trashcan2, 2, 10, 10, 25, 8, 0, 0, 0, 90*DEG_TO_RAD);
+    scene.add(trashcan2);
     //-----------------------------------------------------------
 
     var lights = new Lights();
