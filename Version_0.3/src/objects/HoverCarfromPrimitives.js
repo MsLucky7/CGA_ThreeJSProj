@@ -82,14 +82,14 @@ class HoverCar extends THREE.Group {
         var wheelAxleGeo = new THREE.CylinderGeometry(1 * xSize, 1 * ySize, 30 * zSize, 32, 1, false);
         var wheelAxle01 =  new THREE.Mesh(wheelAxleGeo, wheelCol);
         wheelAxle01.position.set(xPos, yPos - (5* ySize), zPos - (18 * zSize));
-        //wheelAxle01.rotation.set(xRot, yRot, zRot)
+        //wheelAxle01.rotation.set(xRot, yRot, zRot);
         wheelAxle01.rotation.x = 90 * DEG_TO_RAD;
         wheelAxle01.rotation.z = 90 * DEG_TO_RAD;
         wheelAxle01.name = "WheelAxle01";
         this.add(wheelAxle01);
         var wheelAxle02 =  new THREE.Mesh(wheelAxleGeo, wheelCol);
         wheelAxle02.position.set(xPos, yPos - (5* ySize), zPos + (18 * zSize));
-        //wheelAxle02.rotation.set(xRot, yRot, zRot)
+        //wheelAxle02.rotation.set(xRot, yRot, zRot);
         wheelAxle02.rotation.x = 90 * DEG_TO_RAD;
         wheelAxle02.rotation.z = 90 * DEG_TO_RAD;
         wheelAxle02.name = "WheelAxle02";
@@ -98,44 +98,44 @@ class HoverCar extends THREE.Group {
         var wheelHolder = new THREE.BoxGeometry(4 * xSize, 5 * ySize, 4 * zSize);
         var wheelHolder01 =  new THREE.Mesh(wheelHolder, wheelCol);
         wheelHolder01.position.set(xPos + (14 * xSize), yPos - (6* ySize), zPos - (18 * zSize));
-        wheelHolder01.rotation.set(xRot, yRot, zRot)
+        wheelHolder01.rotation.set(xRot, yRot, zRot);
         wheelHolder01.name = "WheelHolder01";
         this.add(wheelHolder01);
         var wheelHolder02 =  new THREE.Mesh(wheelHolder, wheelCol);
         wheelHolder02.position.set(xPos - (14 * xSize), yPos - (6* ySize), zPos - (18 * zSize));
-        wheelHolder02.rotation.set(xRot, yRot, zRot)
+        wheelHolder02.rotation.set(xRot, yRot, zRot);
         wheelHolder02.name = "WheelHolder02";
         this.add(wheelHolder02);
         var wheelHolder03 =  new THREE.Mesh(wheelHolder, wheelCol);
         wheelHolder03.position.set(xPos - (14 * xSize), yPos - (6* ySize), zPos + (18 * zSize));
-        wheelHolder03.rotation.set(xRot, yRot, zRot)
+        wheelHolder03.rotation.set(xRot, yRot, zRot);
         wheelHolder03.name = "WheelHolder03";
         this.add(wheelHolder03);
         var wheelHolder04 =  new THREE.Mesh(wheelHolder, wheelCol);
         wheelHolder04.position.set(xPos + (14 * xSize), yPos - (6* ySize), zPos + (18 * zSize));
-        wheelHolder04.rotation.set(xRot, yRot, zRot)
+        wheelHolder04.rotation.set(xRot, yRot, zRot);
         wheelHolder04.name = "WheelHolder04";
         this.add(wheelHolder04);
 
         var wheelGeo = new THREE.CylinderGeometry(10 * xSize, 10 * ySize, 4 * zSize, 32, 1, false);
         var wheel01 =  new THREE.Mesh(wheelGeo, wheelCol);
         wheel01.position.set(xPos + (14 * xSize), yPos - (10 * ySize), zPos - (18 * zSize));
-        wheel01.rotation.set(xRot, yRot, zRot)
+        wheel01.rotation.set(xRot, yRot, zRot);
         wheel01.name = "Wheel01";
         this.add(wheel01);
         var wheel02 =  new THREE.Mesh(wheelGeo, wheelCol);
         wheel02.position.set(xPos - (14 * xSize), yPos - (10 * ySize), zPos - (18 * zSize));
-        wheel02.rotation.set(xRot, yRot, zRot)
+        wheel02.rotation.set(xRot, yRot, zRot);
         wheel02.name = "Wheel02";
         this.add(wheel02);
         var wheel03 =  new THREE.Mesh(wheelGeo, wheelCol);
         wheel03.position.set(xPos - (14 * xSize), yPos - (10 * ySize), zPos + (18 * zSize));
-        wheel03.rotation.set(xRot, yRot, zRot)
+        wheel03.rotation.set(xRot, yRot, zRot);
         wheel03.name = "Wheel03";
         this.add(wheel03);
         var wheel04 =  new THREE.Mesh(wheelGeo, wheelCol);
         wheel04.position.set(xPos + (14 * xSize), yPos - (10 * ySize), zPos + (18 * zSize));
-        wheel04.rotation.set(xRot, yRot, zRot)
+        wheel04.rotation.set(xRot, yRot, zRot);
         wheel04.name = "Wheel04";
         this.add(wheel04);
         
@@ -143,7 +143,7 @@ class HoverCar extends THREE.Group {
         var lampF01 =  new THREE.Mesh(lampFrontGeo, lampCol);
         lampF01.position.set(xPos + (7 * xSize), yPos + (0 * ySize), zPos + (26 * zSize));
         lampF01.rotation.x = 90 * DEG_TO_RAD;
-        lampF01.name = "LampF01"
+        lampF01.name = "LampF01";
         this.add(lampF01);
         var lampF02 =  new THREE.Mesh(lampFrontGeo, lampCol);
         lampF02.position.set(xPos - (7 * xSize), yPos + (0 * ySize), zPos + (26 * zSize));
@@ -155,7 +155,7 @@ class HoverCar extends THREE.Group {
         var lampB01 =  new THREE.Mesh(lampBackGeo, lampCol);
         lampB01.position.set(xPos + (7 * xSize), yPos + (0 * ySize), zPos - (26 * zSize));
         lampB01.rotation.x = 90 * DEG_TO_RAD;
-        lampB01.name = "LampB01"
+        lampB01.name = "LampB01";
         this.add(lampB01);
         var lampB02 =  new THREE.Mesh(lampBackGeo, lampCol);
         lampB02.position.set(xPos - (7 * xSize), yPos + (0 * ySize), zPos - (26 * zSize));
@@ -167,7 +167,7 @@ class HoverCar extends THREE.Group {
         var windowShield =  new THREE.Mesh(windowShieldGeo, windowCol);
         windowShield.position.set(xPos,yPos + (5* ySize), zPos + (5.5 * zSize));
         windowShield.rotation.x = 90 * DEG_TO_RAD;
-        windowShield.name = "WindowShield"
+        windowShield.name = "WindowShield";
         this.add(windowShield);
     }
 
