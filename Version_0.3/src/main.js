@@ -43,7 +43,7 @@ function main() {
     soundscape = new Soundscape();
 
 
-    var hoverCar = new HoverCar(200, 300, 50, 0, 0, 0, 2, 2, 2);
+    var hoverCar = new HoverCar(0, 300, -500, 0, 0, 0, 2, 2, 2);
     scene.add(hoverCar);
 
     //Islands Placement

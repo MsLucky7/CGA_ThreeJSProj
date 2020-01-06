@@ -10,6 +10,11 @@ function executeRaycast(event) {
 
         var firstHit = intersects[0].object;
 
+        if(firstHit.name == "Corpus01" || firstHit.name == "Corpus02" || firstHit.name == "Corpus03" || firstHit.name == "Corpus04" || firstHit.name == "Corpus05" || firstHit.name == "Corpus06" || firstHit.name == "Corpus07") {
+            firstHit.userData.moving.start();
+        }
+
+        /*
         if(firstHit.name === "Einschalter" || firstHit.name === "Antenne") {
             firstHit.userData.toggleEndPosition();
 
@@ -53,5 +58,6 @@ function executeRaycast(event) {
                 radioAnimationMixer.existingAction("Marker_Action_zurueck").play();
             }
         }
+        */
     }
 }
