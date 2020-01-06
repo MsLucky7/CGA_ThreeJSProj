@@ -182,9 +182,13 @@ class HoverCar extends THREE.Group {
         car.add(windowShield);
 
         var cT1 = {
-            moving: new TWEEN.Tween(car.position).to({y: yPos + 1, z: zPos + 1500}, 4000)
+            moving: new TWEEN.Tween(car.position).to({y: yPos + 1, z: zPos + 1500}, 4000).easing(TWEEN.Easing.Quadratic.Out)
         }
         corpus01.userData = cT1;
+
+        /*hoverCarSound = {
+            sound: false
+        }*/
 
         this.add(car);
         

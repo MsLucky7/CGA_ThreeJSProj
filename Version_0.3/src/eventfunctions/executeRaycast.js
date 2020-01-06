@@ -6,12 +6,21 @@ function executeRaycast(event) {
 
     var intersects = raycaster.intersectObjects(scene.children, true);
 
+    //soundscape.getSounds()["src/sound/files/meep11.mp3"].pause();
+    //var volume = 1;
+    soundscape = new Soundscape();
+
     if (intersects.length > 0) {
 
         var firstHit = intersects[0].object;
 
         if(firstHit.name == "Corpus01" || firstHit.name == "Corpus02" || firstHit.name == "Corpus03" || firstHit.name == "Corpus04" || firstHit.name == "Corpus05" || firstHit.name == "Corpus06" || firstHit.name == "Corpus07") {
             firstHit.userData.moving.start();
+            //hoverCar.hoverCarSound.sound = true;
+            //soundscape.getSounds()["src/sound/files/meep11.mp3"].setVolume(volume);
+
+            soundscape.addSound(firstHit, "src/sound/files/meep11.mp3", 500, true);
+            soundscape.getSounds()["src/sound/files/meep11.mp3"].play();
         }
 
         /*

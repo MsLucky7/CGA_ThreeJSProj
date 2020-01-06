@@ -30,6 +30,7 @@ document.write('<script type="text/javascript" src="src/eventfunctions/updateAsp
 document.write('<script type="text/javascript" src="src/eventfunctions/calculateMousePosition.js"></script>');
 document.write('<script type="text/javascript" src="src/eventfunctions/executeRaycast.js"></script>');
 document.write('<script type="text/javascript" src="src/eventfunctions/executeKeyAction.js"></script>');
+document.write('<script type="text/javascript" src="src/eventfunctions/setHoverCarSound.js"></script>');
 
 const DEG_TO_RAD = Math.PI / 180;
 
@@ -42,8 +43,8 @@ function main() {
 
     soundscape = new Soundscape();
 
-
     var hoverCar = new HoverCar(0, 300, -500, 0, 0, 0, 2, 2, 2);
+    soundscape.addSound(hoverCar, "src/sound/files/meep11.mp3", 500, true);
     scene.add(hoverCar);
 
     //Islands Placement
@@ -110,6 +111,7 @@ function main() {
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 3000);
     camera.position.set(-700, 300, 500);
     camera.lookAt(0, 0, 0);
+    camera.add(soundscape.getAudioListener());
 
     var orbitControls = new THREE.OrbitControls(camera);
     orbitControls.target = new THREE.Vector3(0, 0, 0);
@@ -164,6 +166,9 @@ function main() {
     window.onkeydown = keyDownAction;
     window.onkeyup = keyUpAction;
 
+
+    //window.addEventListener("hoverCarSoundChanged", setHoverCarSound);
+    //window.dispatchEvent(new Event("HoverCarSoundToggle"));
 }
 
 window.onload = main;
